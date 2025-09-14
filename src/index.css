@@ -1,0 +1,113 @@
+:root{
+  --hud-bg: rgba(0,0,0,0.45);
+  --white: #ffffff;
+  --accent: #00f0ff;
+}
+html,body,#root{
+  height:100%;
+  margin:0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background: #0ea5d8; 
+  overflow:hidden;
+}
+.app {
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.hud {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--hud-bg);
+  color: var(--white);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height:1.4;
+  min-width:170px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+.center-col {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 16px;
+  user-select: none;
+}
+.counter {
+  color: white;
+  font-weight: 800;
+  text-align:center;
+  font-size: 48px;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  -webkit-text-stroke: 0.5px rgba(0,0,0,0.12);
+  background: linear-gradient(90deg,#e0f7ff66,#ffffff22);
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+.fish {
+  width: 260px;
+  max-width: 45vw;
+  height: auto;
+  cursor: pointer;
+  transition: transform 300ms cubic-bezier(.2,.9,.3,1), filter 250ms;
+  will-change: transform;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.45));
+}
+.fish.effect {
+  animation: fish-burst 800ms ease forwards;
+}
+
+@keyframes fish-burst {
+  0% { transform: scale(1) rotate(0deg); }
+  30% { transform: scale(1.55) rotate(-12deg); }
+  60% { transform: scale(1.2) rotate(8deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.ripple {
+  position:absolute;
+  border-radius:50%;
+  transform: translate(-50%, -50%);
+  pointer-events:none;
+  opacity:0.9;
+  mix-blend-mode:overlay;
+  animation: ripple 650ms ease-out forwards;
+}
+
+@keyframes ripple {
+  from { width:20px; height:20px; opacity:0.9; }
+  to { width:420px; height:420px; opacity:0; transform: translate(-50%, -50%) scale(1.1); }
+}
+.confetti-wrap {
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+.confetti {
+  position:absolute;
+  width:10px;
+  height:16px;
+  opacity:0.95;
+  transform-origin:center;
+  animation: confetti-fall linear forwards;
+  border-radius:2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+@keyframes confetti-fall {
+  to { transform: translateY(110vh) rotate(720deg); opacity:0; }
+}
+.subtext {
+  color: #e6f9ff;
+  font-size: 13px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
