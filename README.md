@@ -1,12 +1,89 @@
-# React + Vite
+# <div align='center'>CKPTW – Web Gabut Game</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align='center'>
 
-Currently, two official plugins are available:
+![CKPTW Game](https://files.cloudkuimages.guru/images/vYx4YwS.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Project Badge -->
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/>
+  </a>
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-v18%2B-61dafb?logo=react" alt="React"/>
+  </a>
+  <a href="https://vitejs.dev/">
+    <img src="https://img.shields.io/badge/Bundler-Vite-ffdd33?logo=vite" alt="Vite"/>
+  </a>
+</p>
+</div>
 
-## Expanding the ESLint configuration
+## 📋 Table of Contents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [📖 Description](#-description)
+- [🎮 Key Features](#-key-features)
+- [✨ Special Mechanics](#-special-mechanics)
+- [⚙️ Technical Details](#-technical-details)
+- [📂 Project Structure](#-project-structure)
+- [📦 Installation](#-installation)
+- [🚀 Deployment](#-deployment)
+- [💝 Credits](#-credits)
+- [📜 License](#-license)
+- [💖 Support](#-support)
+
+---
+
+## 📖 Description
+
+**CKPTW** is a fun little *gabut* (idle boredom) game built with **React.js + Vite**.  
+The concept is simple: click the fish, watch the counter go up, and enjoy random fish swaps with some cool effects.
+
+> Made just for fun, but also as a showcase of using React for small browser-based games.
+
+---
+
+## 🎮 Key Features
+
+- 🐟 **Clickable Fish** – Tap/click to increase your counter.  
+- 🎲 **Random Fish** – Every 5 clicks, the fish changes randomly from the asset pool.  
+- 🎆 **Cool Effects** – Every 10 clicks triggers a visual effect (confetti / splash).  
+- ⏱️ **Playtime Tracker** – Shows total time spent in the game (days, hours, minutes, seconds).  
+- 🤖 **Auto-clicker Detection** – Detects suspicious clicking patterns and displays `true/false`.  
+- 🎨 **Custom Background** – Blue water scribble background from assets folder.  
+
+---
+
+## ✨ Special Mechanics
+
+- **5 Click Rule:** Fish swaps randomly after 5 clicks.  
+- **10 Click Rule:** Special animation/effect is triggered.  
+- **HUD:** Top-left corner shows total playtime and auto-clicker status.  
+
+---
+
+## ⚙️ Technical Details
+
+| Info          | Value                 |
+|---------------|-----------------------|
+| Game Name     | `CKPTW`              |
+| Framework     | `React + Vite`       |
+| Language      | `JavaScript (ES6+)`  |
+| License       | MIT                   |
+
+---
+
+## 📂 Project Structure
+
+```bash
+CKPTW/
+├─ public/
+│  └─ index.html
+├─ src/
+│  ├─ assets/
+│  │  ├─ bg.png
+│  │  ├─ fish1.png ... fish10.png
+│  ├─ App.js
+│  ├─ index.js
+│  └─ index.css
+├─ package.json
+└─ README.md
