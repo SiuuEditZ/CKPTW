@@ -1,0 +1,17 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ckptw-phi.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ckptw-phi.vercel",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://ckptw-phi.vercel.app/vite.svg",
+      "type": "image/svg+xml"
+    }
+  ]
+}
