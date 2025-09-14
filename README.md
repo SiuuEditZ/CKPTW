@@ -95,7 +95,7 @@ CKPTW/
 
 ## 📦 Installation
 
-Clone repository ini:
+Clone this repository::
 
 ```bash
 git clone https://github.com/SiuuEditZ/CKPTW.git
@@ -108,13 +108,13 @@ Install dependencies:
 npm install
 ```
 
-Jalankan di local:
+Run locally:
 
 ```bash
 npm run dev
 ```
 
-Build untuk production:
+Build for production:
 
 ```bash
 npm run build
@@ -124,13 +124,13 @@ npm run build
 
 ## 🚀 Deployment
 
-Kamu bisa deploy dengan beberapa cara:  
+You can deploy in several ways:  
 
 - **Vercel** → connect GitHub repo, auto-deploy.  
-- **Netlify / Cloudflare Pages** → drag `dist/` hasil build.  
-- **VPS** → build dulu `npm run build` lalu serve dengan **nginx/pm2**.  
+- **Netlify / Cloudflare Pages** → drag `dist/` build results.  
+- **VPS** → build first `npm run build` then serve with **nginx/pm2**.  
 
-👉 Setelah live, masukin link web ke [PWABuilder](https://www.pwabuilder.com/) untuk generate **APK / PWA App**.  
+👉 Once live, enter the web link into [PWABuilder](https://www.pwabuilder.com/) to generate **APK / PWA App**.  
 
 ---
 
@@ -174,7 +174,7 @@ SOFTWARE.
 
 ## 💖 Support
 
-Kalau suka project ini & mau support:  
+If you like this project & want to support:  
 
 ☕ [Buy Me a Coffee](https://www.buymeacoffee.com/)  
 💸 [Saweria](https://saweria.co/siuueditz)  
