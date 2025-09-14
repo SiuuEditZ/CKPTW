@@ -18,6 +18,8 @@
 </p>
 </div>
 
+---
+
 ## 📋 Table of Contents
 
 - [📖 Description](#-description)
@@ -87,3 +89,96 @@ CKPTW/
 │  └─ index.css
 ├─ package.json
 └─ README.md
+```
+
+---
+
+## 📦 Installation
+
+Clone repository ini:
+
+```bash
+git clone https://github.com/SiuuEditZ/CKPTW.git
+cd CKPTW
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Jalankan di local:
+
+```bash
+npm run dev
+```
+
+Build untuk production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🚀 Deployment
+
+Kamu bisa deploy dengan beberapa cara:  
+
+- **Vercel** → connect GitHub repo, auto-deploy.  
+- **Netlify / Cloudflare Pages** → drag `dist/` hasil build.  
+- **VPS** → build dulu `npm run build` lalu serve dengan **nginx/pm2**.  
+
+👉 Setelah live, masukin link web ke [PWABuilder](https://www.pwabuilder.com/) untuk generate **APK / PWA App**.  
+
+---
+
+## 💝 Credits
+
+- 👑 Project by: **SiuuEditZ**  
+- 🎨 Asset: Fish + Background dari free resources.  
+- ⚡ Tech Stack: **React + Vite**  
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+```
+MIT License
+
+Copyright (c) 2025 SiuuEditZ
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 💖 Support
+
+Kalau suka project ini & mau support:  
+
+☕ [Buy Me a Coffee](https://www.buymeacoffee.com/)  
+💸 [Saweria](https://saweria.co/siuueditz)  
+
+---
+
+✨ Powered by **SiuuEditZ** 
